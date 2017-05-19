@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Main page template</title>
-        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+        <title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
