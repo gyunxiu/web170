@@ -20,8 +20,8 @@
 
         <!-- column three -->
         <div class="column">
-        <a href="http://gyunxiu.com/web170/wordpress/schedule/"><img class="icon" src="http://gyunxiu.com/web170/template/imgs/icon-calender.png" alt="Calender" /></a>
-        <p>
+        <a href="http://gyunxiu.com/web170/wordpress/blog/"><img class="icon" src="http://gyunxiu.com/web170/template/imgs/icon-postings.png" alt="postings" /></a>
+        <!--<p>
             ・17:00 12/12/17 Member gathering<br />
             ・19:00 11/11/17 Happy hours<br />
             ・09:00 01/01/17 Lunar new year<br />
@@ -29,7 +29,14 @@
             ・19:00 11/11/17 Happy hours<br />
             ・09:00 01/01/17 Lunar new year<br />
         <a class="more" href="http://gyunxiu.com/web170/wordpress/schedule/">READ MORE</a>
-        </p>
+        </p>-->
+        <ul>
+        <?php rewind_posts(); ?>
+        <?php query_posts('showposts=4');?>
+        <?php while (have_posts()) : the_post(); ?>
+        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+        <?php endwhile;?>
+        </ul>
         </div>
 
 <?php get_footer(); ?>
