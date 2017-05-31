@@ -43,17 +43,21 @@ nav {
         font-size: 23px;
         }
         
-        #sub-nav-title {
+        #sub-nav-title, #meta-3 h2 {
             color: #444444;
             margin: 15px 0 10px 20px;
             display:inline-block;
         }
 
-        #sub-nav-items a{
+        #sub-nav-items a, #meta-3 a{
         font-weight: lighter;
         color:#9c8768;
         text-decoration: none;
         
+        }
+
+        #meta-3 a {
+        font-family: Myriad Pro, sans-serif;  
         }
 
         #sub-nav-items li {

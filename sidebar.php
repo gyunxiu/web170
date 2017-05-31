@@ -18,5 +18,7 @@
         <?php if (get_post_meta($post->ID, 'Quote', true)) : ?>
         <blockquote><?php echo get_post_meta($post->ID, 'Quote', true);?></blockquote>
         <?php endif; ?>
+        <!--dynamic sidebar-->
+        <?php dynamic_sidebar(1); ?>
 </div>
     
