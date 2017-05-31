@@ -9,7 +9,7 @@
             <small>Posted on <?php the_time('F j, Y');?> by <?php the_author(); ?> in <?php the_category(', '); ?></small>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a>
             <?php the_excerpt();?>
-            <!--<p><a class="more" href="<?php the_permalink(); ?>">READ MORE</a></p> -->
+            <p class="read-more"><a href="<?php the_permalink(); ?>">Read More &raquo;</a></p>
             </article>
 
             <?php endwhile; endif; ?>
